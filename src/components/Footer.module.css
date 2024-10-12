@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.terms {
+  margin: 30px 0;
+  display: inline;
+  color: white;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social a {
+  color: white;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}

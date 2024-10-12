@@ -1,0 +1,103 @@
+.main {
+  padding: 20px 70px;
+  justify-content: space-between;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.open {
+  padding-bottom: 100%;
+}
+
+.logo {
+  width: 106px;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.burger {
+  display: flex;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+  margin-right: 86px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #ffffff;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.active span {
+  transform: scale(0);
+}
+
+.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+.nav {
+  position: fixed;
+  top: 146px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.navLink {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 33px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.activeLink {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
