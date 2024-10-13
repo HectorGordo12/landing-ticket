@@ -1,0 +1,27 @@
+.background {
+  background-color: #e7e7e7;
+  color: black;
+  padding: 80px 0 60px 0;
+}
+
+.appellation {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  margin: 30px auto;
+  background: #637cfa;
+  border: none;
+}
+
+.content {
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-size: 16px;
+}
