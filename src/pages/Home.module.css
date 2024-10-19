@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.txtCenter {
+  text-align: center;
+}
+
 .insta {
   text-align: center;
   margin: 60px 0 30px 0;

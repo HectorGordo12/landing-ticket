@@ -1,0 +1,59 @@
+.slim {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 40px 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  margin: 40px 0;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnContainer a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 310px;
+  height: 50px;
+  padding: 30px 60px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.process {
+  grid-column: 3/11;
+  text-align: center;
+}
+
+.chapterTitle {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.img {
+  width: 100%;
+}
+
+.tiers {
+  grid-column: 4/10;
+  text-align: center;
+}

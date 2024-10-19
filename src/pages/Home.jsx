@@ -11,7 +11,7 @@ const Home = () => {
           <h1 className="title">
             CONFIRMED360 IS YOUR ENTERTAINMENT CONCIERGE!
           </h1>
-          <div className="description">
+          <div className={`description ${styles.txtCenter}`}>
             <p>
               Confirmed360 is your solution to the complex booking process.{" "}
             </p>

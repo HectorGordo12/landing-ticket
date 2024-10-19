@@ -4,11 +4,13 @@ body {
   background-color: black;
   color: white;
   font-family: "Montserrat";
+  max-width: 100%;
 }
 
 .main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
 }
 
 .text {
@@ -28,6 +30,7 @@ body {
   font-size: 15px;
   letter-spacing: 2px;
   line-height: 25px;
+  text-align: left;
 }
 
 .center {
@@ -42,7 +45,7 @@ body {
 }
 
 .slim {
-  font-size: 28px;
+  font-size: 58px;
   font-weight: 300;
   letter-spacing: 5px;
 }
