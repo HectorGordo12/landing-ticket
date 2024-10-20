@@ -1,0 +1,21 @@
+.imageHead {
+  height: 680px;
+  width: 100%;
+  object-fit: cover;
+  grid-column: 1/13;
+}
+
+.yelow {
+  color: #d6c994;
+  font-size: 21px;
+  font-weight: 500;
+  margin: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.marginBottom {
+  margin-bottom: 50px;
+}
