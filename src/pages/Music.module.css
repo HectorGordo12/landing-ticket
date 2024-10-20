@@ -21,7 +21,7 @@
 }
 
 .wrapper {
-  position: relative; /* Относительное позиционирование для центрирования текста */
+  position: relative;
   grid-column: 1/13;
 }
 

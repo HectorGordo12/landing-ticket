@@ -2,17 +2,34 @@ import { Form } from "../components/Form";
 import main from "../img/main.jpg";
 import styles from "./Home.module.css";
 import data from "/posts.json";
+import { useVisibility } from "../hooks/useVisibility";
+import "../app.css"; // Подключаем глобальный app.css
 
 const Home = () => {
+  const [titleVisible, titleRef] = useVisibility("titleVisible");
+  const [descVisible, descRef] = useVisibility("descVisible", 0.1, 200);
+  const [instaVisible, instaRef] = useVisibility("instaVisible", 0.3, 0);
+  const [albumVisible, albumRef] = useVisibility("albumVisible", 0.1, 200);
+
+  console.log(instaVisible);
+
   return (
     <>
       <img className={styles.img} src={main} alt="main" />
       <div className="main">
         <div className="text">
-          <h1 className="title">
+          <h1
+            className={`title ${titleVisible ? "visible" : "hidden"}`}
+            ref={titleRef}
+          >
             CONFIRMED360 IS YOUR ENTERTAINMENT CONCIERGE!
           </h1>
-          <div className={`description ${styles.txtCenter}`}>
+          <div
+            ref={descRef}
+            className={`description ${styles.txtCenter} ${
+              descVisible ? "visible" : "hidden"
+            }`}
+          >
             <p>
               Confirmed360 is your solution to the complex booking process.{" "}
             </p>
@@ -27,8 +44,11 @@ const Home = () => {
         </div>
         <div className="center">
           <Form />
-          <div className={styles.insta}>
-            <h2 className="slim">CONNECT WITH US!</h2>
+          <div
+            ref={instaRef}
+            className={`${styles.insta} ${instaVisible ? "visible" : "hidden"}`}
+          >
+            <h2 className={styles.slim}>CONNECT WITH US!</h2>
             <hr className={styles.line} />
             <a
               className={styles.link}
@@ -37,7 +57,10 @@ const Home = () => {
               @CONFIRMED360
             </a>
           </div>
-          <div className="album">
+          <div
+            ref={albumRef}
+            className={`album ${albumVisible ? "visible" : "hidden"}`}
+          >
             {data.map((post) => {
               return (
                 <a href={post.link} key={post.id}>

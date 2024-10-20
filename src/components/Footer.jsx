@@ -1,9 +1,16 @@
+import React from "react";
+import { useVisibility } from "../hooks/useVisibility";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [isVisible, footerRef] = useVisibility();
+
   return (
-    <div className={styles.main}>
+    <div
+      ref={footerRef}
+      className={`${styles.main} ${isVisible ? styles.visible : ""}`}
+    >
       <Link className={styles.terms} to="terms-of-service">
         TERMS & CONDITIONS
       </Link>

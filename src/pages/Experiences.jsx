@@ -1,12 +1,21 @@
 import { Form } from "../components/Form";
 import styles from "./Experiences.module.css";
 import data from "/categories.json";
+import { useVisibility } from "../hooks/useVisibility";
 
 const Experiences = () => {
+  const [textVisible, textRef] = useVisibility("textVisible");
+  const [albumVisible, albumRef] = useVisibility("albumVisible");
+  const [descriptionVisible, descriptionRef] =
+    useVisibility("descriptionVisible");
+
   return (
     <div className="main">
       <div className="center">
-        <div className="text">
+        <div
+          ref={textRef}
+          className={`text ${textVisible ? "visible" : "hidden"}`}
+        >
           <h1 className="title">SELECT A CONFIRMED360 EXPERIENCE</h1>
           <div className="description">
             <p>
@@ -18,7 +27,10 @@ const Experiences = () => {
             </p>
           </div>
         </div>
-        <div className="album">
+        <div
+          ref={albumRef}
+          className={`album ${albumVisible ? "visible" : "hidden"}`}
+        >
           {data.map((category) => {
             return (
               <a href={category.link} key={category.id}>
@@ -29,7 +41,10 @@ const Experiences = () => {
         </div>
       </div>
       <div className="text">
-        <p className="description">
+        <p
+          ref={descriptionRef}
+          className={`description ${descriptionVisible ? "visible" : "hidden"}`}
+        >
           Let our expert team help you with your event requests. Fill out the
           form below and we will contact you within the next 24-48 hours.
         </p>
