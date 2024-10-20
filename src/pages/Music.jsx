@@ -1,5 +1,6 @@
 import { Form } from "../components/Form";
 import styles from "./Music.module.css";
+import data from "/clientsPosts.json";
 
 const Music = () => {
   return (
@@ -27,6 +28,28 @@ const Music = () => {
           </p>
         </div>
         <Form />
+      </div>
+      <div className={styles.wrapper}>
+        <img
+          className={styles.imageBody}
+          src="https://images.squarespace-cdn.com/content/v1/5e8e02eb5040c0487c716fa7/1693419529281-GME537Z3X60QNRQ4TUS4/image-asset.jpeg?format=2500w"
+          alt="pov"
+        />
+        <p className={styles.textBody}>CLIENT POV</p>
+      </div>
+      <div className="center">
+        <div className={styles.album}>
+          {data.map((post) => {
+            return (
+              <img
+                key={post.id}
+                className={styles.item}
+                src={post.img}
+                alt={`Post № ${post.id}`}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
