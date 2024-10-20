@@ -1,3 +1,4 @@
+import { Form } from "../components/Form";
 import styles from "./Experiences.module.css";
 import data from "/categories.json";
 
@@ -27,10 +28,14 @@ const Experiences = () => {
           })}
         </div>
       </div>
-      <p className="description text">
-        Let our expert team help you with your event requests. Fill out the form
-        below and we will contact you within the next 24-48 hours.
-      </p>
+      <div className="text">
+        <p className="description">
+          Let our expert team help you with your event requests. Fill out the
+          form below and we will contact you within the next 24-48 hours.
+        </p>
+
+        <Form />
+      </div>
     </div>
   );
 };

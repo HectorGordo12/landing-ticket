@@ -1,3 +1,4 @@
+import { Form } from "../components/Form";
 import { Testimonials } from "../components/Testimonials";
 import styles from "./Referrals.module.css";
 
@@ -40,6 +41,7 @@ const Referrals = () => {
               <button className={styles.btn}>MAJOR EVENT CALENDAR</button>
             </a>
           </div>
+          <Form />
         </div>
         <div className={styles.process}>
           <h2 className={styles.chapterTitle}>THE PROCESS</h2>

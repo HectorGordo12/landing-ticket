@@ -1,3 +1,4 @@
+import { Form } from "../components/Form";
 import main from "../img/main.jpg";
 import styles from "./Home.module.css";
 import data from "/posts.json";
@@ -25,17 +26,7 @@ const Home = () => {
           </div>
         </div>
         <div className="center">
-          <form action="mailto:murmangordo12@gmail.com" encType="text/plain">
-            <label>
-              Ваше имя
-              <input type="text" name="name" required />
-            </label>
-            <label>
-              Что вы хотите заказать?
-              <input type="text" name="order" required />
-            </label>
-            <button type="submit">Сделать заказ</button>
-          </form>
+          <Form />
           <div className={styles.insta}>
             <h2 className="slim">CONNECT WITH US!</h2>
             <hr className={styles.line} />

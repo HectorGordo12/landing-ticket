@@ -1,3 +1,4 @@
+import { Form } from "../components/Form";
 import styles from "./Music.module.css";
 
 const Music = () => {
@@ -25,6 +26,7 @@ const Music = () => {
             representative will be in contact with you within 24-48 hours.
           </p>
         </div>
+        <Form />
       </div>
     </div>
   );
