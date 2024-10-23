@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
 }
 
 .btnContainer a {
@@ -56,4 +57,35 @@
 .tiers {
   grid-column: 4/10;
   text-align: center;
+}
+
+@media (max-width: 1041px) {
+  .process {
+    grid-column: 1/13;
+  }
+
+  .tiers {
+    grid-column: 2/12;
+  }
+}
+
+@media (max-width: 500px) {
+  .chapterTitle {
+    font-size: 30px;
+  }
+
+  .btnContainer a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
 }

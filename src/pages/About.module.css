@@ -26,3 +26,13 @@
 .center {
   text-align: center;
 }
+
+@media (max-width: 540px) {
+  .btn {
+    padding: 15px 30px;
+  }
+
+  .img {
+    margin-top: 30px;
+  }
+}

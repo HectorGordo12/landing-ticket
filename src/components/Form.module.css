@@ -15,6 +15,7 @@
   flex-direction: column;
   flex: 1;
   margin: 8px 0;
+  width: 100%;
 }
 
 .inputGroup label {
@@ -27,8 +28,8 @@
 
 .inputGroup input,
 .inputGroup textarea {
-  padding: 10px;
-  border: none; /* Убираем все границы */
+  padding: 0px;
+  border: none;
   border-bottom: 1px solid white; /* Добавляем белую линию снизу */
   background-color: transparent; /* Прозрачный фон */
   font-size: 16px;
