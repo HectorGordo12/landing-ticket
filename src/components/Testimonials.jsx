@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Testimonials.module.css";
+import emailjs from "@emailjs/browser";
 
 const ArrowRight = () => {
   return (

@@ -19,6 +19,38 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Асинхронная отправка данных через fetch
+    fetch("https://formsubmit.co/ajax/ivityavelichkevich@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      }),
+    })
+      .then((response) => {
+        // Ответа не будет, так как это непрозрачный запрос
+        alert("Form submitted successfully!");
+      })
+      .catch((error) => {
+        console.error("Error submitting form:", error);
+        alert("Error submitting form");
+      });
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
 
   return (
