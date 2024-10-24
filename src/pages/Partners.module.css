@@ -41,20 +41,15 @@
 .figure {
   display: flex;
   align-items: stretch;
+  margin-top: 70px;
 }
 
-.figure:nth-child(2) {
+.swap {
   flex-direction: row-reverse;
 }
 
 .image {
   max-width: 50%;
-  object-fit: cover;
-  max-height: 100%;
-}
-
-.imageWide {
-  max-width: 75%;
   object-fit: cover;
   max-height: 100%;
 }
@@ -91,7 +86,7 @@
   border-radius: 40px;
   background-color: rgb(0, 0, 0);
   border: none;
-  display: inline-block; /* Используем inline-block, чтобы фон облегал текст */
+  display: inline-block;
   text-decoration: none;
   color: white;
 }
