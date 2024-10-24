@@ -6,9 +6,12 @@ const Partners = () => {
     <div className={styles.main}>
       <div className={styles.wrapper}>
         <h1 className="title">OUR PARTNERS</h1>
-        <dutton className={`${styles.btn} ${styles.top}`}>
+        <a
+          href="mailto:test@gmail.com?subject=Partnership"
+          className={`${styles.btn} ${styles.top}`}
+        >
           BECOME A PARTNER
-        </dutton>
+        </a>
       </div>
 
       <div className={styles.list}>
@@ -94,7 +97,12 @@ const Partners = () => {
         </figure>
       </div>
       <div className={styles.wrapper}>
-        <dutton className={styles.btn}>BECOME A PARTNER</dutton>
+        <a
+          href="mailto:test@gmail.com?subject=Partnership"
+          className={styles.btn}
+        >
+          BECOME A PARTNER
+        </a>
       </div>
     </div>
   );

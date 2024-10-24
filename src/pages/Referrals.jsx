@@ -34,10 +34,16 @@ const Referrals = () => {
           </div>
           <h3 className={styles.subtitle}>ACCESS CONFIRMED360’S EVENTS</h3>
           <div className={styles.btnContainer}>
-            <a href="#">
+            <a
+              href="https://static1.squarespace.com/static/5e8e02eb5040c0487c716fa7/t/6704137bc3d9a94997596f03/1728320382272/OCTOBER+2024+CAL_Logo+copy.pdf"
+              target="_blank"
+            >
               <button className={styles.btn}>OCTOBER EVENT CALENDAR</button>
             </a>
-            <a href="#">
+            <a
+              href="https://static1.squarespace.com/static/5e8e02eb5040c0487c716fa7/t/656e3865914f590e9228b2b7/1701722218303/MAJOR+2024+EVENTS_MKpdf.pdf"
+              target="_blank"
+            >
               <button className={styles.btn}>MAJOR EVENT CALENDAR</button>
             </a>
           </div>
